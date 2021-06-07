@@ -11,6 +11,18 @@ For, setting up the Triton inference server we generally need to pass two hurdle
 # Part1: Setting up Triton Inference Server on the machine
 Let's start by setting up a triton server locally on the computer by following the below steps.
 
+### Quickstart with Docker
+```
+1. Install Docker
+2. docker pull nvcr.io/nvidia/tritonserver:21.05-py3
+3. git clone https://github.com/sachinsharma9780/AI-Enterprise-Workshop-Building-ML-Pipelines.git
+4. cd ./AI-Enterprise-Workshop-Building-ML-Pipelines
+5. docker run --rm -p8000:8000 -p8001:8001 -p8002:8002 -v ${PWD}/model_repository:/models nvcr.io/nvidia/tritonserver:21.05-py3 tritonserver --model-repository=/models
+6. curl -v http://localhost:8000/v2/health/ready
+
+Continue to Part 2 below..
+```
+
 ## Install Docker
 [Docker](https://docs.docker.com/get-docker/)
 
