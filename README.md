@@ -24,7 +24,7 @@ Let's start by setting up a triton server locally on the computer by following t
 ) if you need an example model repository (this will also download some pre-trained models structured in a manner as expected by Triton)
 2. After cloning, you can find the trained models under: server → docs →examples →model_repository
 3. Or you can clone this repo and in the model_repository folder, I have already stored some default trained models with their corresponding configuration file which comes along while cloning the above repsitory.
-4. Instantiate triton server using the cmd: docker run --gpus=1 --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/full/path/to/example/model/repository:/models <docker image> tritonserver —model-repository=/models
+4. Instantiate triton server using the cmd: docker run --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/full/path/to/example/model/repository:/models <docker image> tritonserver —model-repository=/models
 
 Note: Where <docker image> is nvcr.io/nvidia/tritonserver:<xx.yy>-py3 if you pulled the Triton container from NGC. -v flag points to the path of your model repository where all your models are stored as showed above.
 
