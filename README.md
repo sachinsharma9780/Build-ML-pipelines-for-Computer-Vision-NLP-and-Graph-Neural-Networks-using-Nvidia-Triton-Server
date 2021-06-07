@@ -32,7 +32,7 @@ e.g. docker run  --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/Users/sachin/Deskto
 
 
 ![Screenshot 2021-06-07 at 11 24 57](https://user-images.githubusercontent.com/40523048/120992588-0ac11000-c783-11eb-8fdb-43404f52f97b.png)
-The above image shows the successful instantiation of triton server looks like.
+<center>The above image shows the successful instantiation of triton server looks like.</center>
 
 ## Verify Triton is running correctly
 
