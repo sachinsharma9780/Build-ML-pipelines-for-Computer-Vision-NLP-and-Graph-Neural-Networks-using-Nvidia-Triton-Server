@@ -15,5 +15,12 @@ Let's start by setting up a triton server locally on the computer by following t
 [Docker](https://docs.docker.com/get-docker/)
 
 ## Pulling triton server docker image from Nvidia NGC:
-1. [Download](https://ngc.nvidia.com/catalog/containers/nvidia:tritonserver/
-)
+1. [Download](https://ngc.nvidia.com/catalog/containers/nvidia:tritonserver/)
+2. or use the command: docker pull nvcr.io/nvidia/tritonserver:21.05-py3
+3. Image size: 10.6 GB (10-15 mins to install) 
+
+## Create a model repository to add your models:
+1. Clone the [Triton Inference Server GitHub repository](https://github.com/triton-inference-server/server.git
+) if you need an example model repository (here all our trained models will be stored)
+2. 
+
