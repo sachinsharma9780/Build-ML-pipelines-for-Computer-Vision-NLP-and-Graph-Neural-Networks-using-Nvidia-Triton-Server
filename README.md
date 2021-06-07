@@ -37,3 +37,9 @@ In this part we will download the libraries required to interact with triton ser
   4. python -m pip install grpcio-tools
   5. pip install geventhttpclient
 
+## Image classification Example:
+Once the libraries are installed we can use the inference script to send the inference request:
+
+e.g. python image_client.py -c 3  -m inception_graphdef -s INCEPTION vulture.jpeg
+
+Note: -m is the name of the model, -s scaling type, input image
