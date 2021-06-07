@@ -11,9 +11,9 @@ For, setting up the Triton inference server we generally need to pass two hurdle
 # Part1: Setting up Triton Inference Server on the machine
 Let's start by setting up a triton server locally on the computer by following the below steps.
 
-# Install Docker
+## Install Docker
 [Docker](https://docs.docker.com/get-docker/)
 
-# Pulling triton server docker image from Nvidia NGC:
+## Pulling triton server docker image from Nvidia NGC:
 1. [Download](https://ngc.nvidia.com/catalog/containers/nvidia:tritonserver/
 )
