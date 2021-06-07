@@ -4,4 +4,4 @@ which simplifies the deployment of AI models at scale in production. For the pur
 
 
 ![1_126iG2mnfl4i6iH9FKu3sg](https://user-images.githubusercontent.com/40523048/120965914-c4a98380-c765-11eb-86f0-eb2ce2574e97.png)
-[Nvidia Triton Inference Server]: https://developer.nvidia.com/nvidia-triton-inference-server?ncid=partn-88872#cid=dl13_partn_en-us 
+[Nvidia Triton Inference Server](https://developer.nvidia.com/nvidia-triton-inference-server?ncid=partn-88872#cid=dl13_partn_en-us) 
