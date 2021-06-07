@@ -58,3 +58,6 @@ Once the libraries are installed we can use the inference script to send the inf
 
 e.g. python image_client.py -c 3  -m inception_graphdef -s INCEPTION vulture.jpeg
 
+## References:
+1. https://developer.nvidia.com/nvidia-triton-inference-server?ncid=partn-88872#cid=dl13_partn_en-us
+2. https://github.com/triton-inference-server/server/blob/main/docs/quickstart.md
