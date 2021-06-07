@@ -26,4 +26,14 @@ Let's start by setting up a triton server locally on the computer by following t
 3. Or you can clone this repo and in the model_repository folder I have already stored some default trained models whiich comes with cloning the above repsitory.
 4. Instantiate triton server using the cmd: docker run --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/full/path/to/example/model/repository:/models <docker image> tritonserver —model-repository=/models
 
-  Note: Where <docker image> is nvcr.io/nvidia/tritonserver:<xx.yy>-py3 if you pulled the Triton container from NGC. -v flag points to the path of your model repository where all your models are stored as showed above.
+Note: Where <docker image> is nvcr.io/nvidia/tritonserver:<xx.yy>-py3 if you pulled the Triton container from NGC. -v flag points to the path of your model repository where all your models are stored as showed above.
+
+# Part2: Setting up Triton Inference client
+In this part we will download the libraries required to interact with triton server i.e sending requests (input data) and recieving back the predictions.
+## Libraries required:
+  1. pip install nvidia-pyindex
+  2. pip install tritonclient[all]
+  3. python -m pip install grpcio
+  4. python -m pip install grpcio-tools
+  5. pip install geventhttpclient
+
