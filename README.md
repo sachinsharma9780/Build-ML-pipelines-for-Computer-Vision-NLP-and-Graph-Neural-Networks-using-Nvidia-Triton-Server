@@ -24,12 +24,25 @@ Let's start by setting up a triton server locally on the computer by following t
 ) if you need an example model repository (this will also download some pre-trained models structured in a manner as expected by Triton)
 2. After cloning, you can find the trained models under: server → docs →examples →model_repository
 3. Or you can clone this repo and in the model_repository folder, I have already stored some default trained models with their corresponding configuration file which comes along while cloning the above repsitory.
-4. Instantiate triton server using the cmd: docker run --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/full/path/to/example/model/repository:/models <docker image> tritonserver —model-repository=/models
+4. Instantiate triton server using the cmd: docker run --gpus=1 --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/full/path/to/example/model/repository:/models <docker image> tritonserver —model-repository=/models
 
 Note: Where <docker image> is nvcr.io/nvidia/tritonserver:<xx.yy>-py3 if you pulled the Triton container from NGC. -v flag points to the path of your model repository where all your models are stored as showed above.
 
+e.g. docker run  --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/Users/sachin/Desktop/arangodb/scripts/triton/model_repository:/models nvcr.io/nvidia/tritonserver:21.05-py3 tritonserver --model-repository=/models 
+
+
 ![Screenshot 2021-06-07 at 11 24 57](https://user-images.githubusercontent.com/40523048/120992588-0ac11000-c783-11eb-8fdb-43404f52f97b.png)
 The above image shows the successful instantiation of triton server looks like.
+
+## Verify Triton is running correctly
+
+curl -v localhost:8000/v2/health/ready
+
+The expected output should be (by default triton provide services on port 8000) :
+< HTTP/1.1 200 OK
+< Content-Length: 0
+< Content-Type: text/plain
+
 
 # Part2: Setting up Triton Inference client
 In this part we will download the libraries required to interact with triton server i.e sending requests (input data) and recieving back the predictions.
@@ -45,4 +58,3 @@ Once the libraries are installed we can use the inference script to send the inf
 
 e.g. python image_client.py -c 3  -m inception_graphdef -s INCEPTION vulture.jpeg
 
-Note: -m is the name of the model, -s scaling type, input image
