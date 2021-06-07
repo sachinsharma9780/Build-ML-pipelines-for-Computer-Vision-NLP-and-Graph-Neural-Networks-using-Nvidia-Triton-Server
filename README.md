@@ -38,7 +38,7 @@ e.g. docker run  --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/Users/sachin/Deskto
 
 ## Verify Triton is running correctly
 
-curl -v localhost:8000/v2/health/ready
+curl -v http://localhost:8000/v2/health/ready
 
 The expected output should be (by default triton provide services on port 8000) : <br/>
 < HTTP/1.1 200 OK. <br/>
