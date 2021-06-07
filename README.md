@@ -18,6 +18,7 @@ Let's start by setting up a triton server locally on the computer by following t
 1. [Download](https://ngc.nvidia.com/catalog/containers/nvidia:tritonserver/) docker image
 2. or use the command: docker pull nvcr.io/nvidia/tritonserver:21.05-py3
 3. Image size: 10.6 GB (10-15 mins to install) 
+4. To view the downloaded docker image: docker images
 
 ## Create a model repository to add your models:
 1. Clone the [Triton Inference Server GitHub repository](https://github.com/triton-inference-server/server.git
@@ -47,6 +48,7 @@ The expected output should be (by default triton provide services on port 8000) 
 
 # Part2: Setting up Triton Inference client
 In this part we will download the libraries required to interact with triton server i.e sending requests (input data) and recieving back the predictions.
+It is recommended to install the below packages in a separate [conda](https://docs.conda.io/projects/conda/en/latest/index.html) environment.
 ## Libraries required:
   1. pip install nvidia-pyindex
   2. pip install tritonclient[all]
