@@ -38,10 +38,10 @@ The above image shows the successful instantiation of triton server looks like.
 
 curl -v localhost:8000/v2/health/ready
 
-The expected output should be (by default triton provide services on port 8000) :
-< HTTP/1.1 200 OK
-< Content-Length: 0
-< Content-Type: text/plain
+The expected output should be (by default triton provide services on port 8000) : <br/>
+< HTTP/1.1 200 OK. <br/>
+< Content-Length: 0 <br/>
+< Content-Type: text/plain <br/>
 
 
 # Part2: Setting up Triton Inference client
