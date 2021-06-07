@@ -21,5 +21,5 @@ Let's start by setting up a triton server locally on the computer by following t
 
 ## Create a model repository to add your models:
 1. Clone the [Triton Inference Server GitHub repository](https://github.com/triton-inference-server/server.git
-) if you need an example model repository (here all our trained models will be stored)
-2. 
+) if you need an example model repository (this will also download some pre-trained models structured in a manner as expected by Triton)
+2. After cloning, you can find pre-trained models under server → docs →examples →model_repository
