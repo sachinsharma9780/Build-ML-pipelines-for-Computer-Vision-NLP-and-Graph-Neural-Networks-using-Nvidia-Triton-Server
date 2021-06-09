@@ -69,7 +69,7 @@ It is recommended to install the below packages in a separate [conda](https://do
   5. pip install geventhttpclient
 
 ## Image classification Example:
-Once the libraries are installed we can use the inference script to send the inference request:
+Once the libraries are installed we can start communicating with triton server using inference scripts:
 
 e.g. python image_client.py -c 3  -m inception_graphdef -s INCEPTION vulture.jpeg
 
