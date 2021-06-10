@@ -67,6 +67,7 @@ It is recommended to install the below packages in a separate [conda](https://do
   3. python -m pip install grpcio
   4. python -m pip install grpcio-tools
   5. pip install geventhttpclient
+  6. pip install attrdict
 
 ## Image classification Example:
 Once the libraries are installed we can start communicating with triton server using inference scripts:
