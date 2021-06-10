@@ -36,7 +36,7 @@ Continue to Part 2 below..
 1. Clone the [Triton Inference Server GitHub repository](https://github.com/triton-inference-server/server.git
 ) if you need an example model repository (this will also download some pre-trained models structured in a manner as expected by Triton)
 2. After cloning, you can find the trained models under: server → docs →examples →model_repository
-3. Or you can clone this repo and in the model_repository folder, I have already stored some default trained models with their corresponding configuration file which comes along while cloning the above repsitory.
+3. Or you can clone this repo and in the model_repository folder, I have already stored some default trained models with their corresponding configuration file which comes along while cloning the above repository.
 4. Instantiate triton server using the cmd: </br>
 docker run --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/full/path/to/example/model/repository:/models docker image tritonserver —model-repository=/models
 
