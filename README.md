@@ -1,5 +1,5 @@
 # AI-Enterprise-Workshop-Building-ML-Pipelines
-In this workshop we are going to use Nvidia's Triton Inference Server (formerly known as TensorRT Inference Server) 
+In this workshop we are going to use [Nvidia's Triton Inference server](https://developer.nvidia.com/nvidia-triton-inference-server?ncid=partn-88872#cid=dl13_partn_en-us) (formerly known as TensorRT Inference Server) 
 which simplifies the deployment of AI models at scale in production. The one thing which attracted me the most is the capability of Triton inference server to host/deploy trained models from any framework (whether it is a TensorFlow, TensorRT, PyTorch, Caffe, ONNX, Runtime, or some custom framework) from local storage or Google Cloud Platform or AWS S3 on any GPU- or CPU-based infrastructure (cloud, data center, or edge). Therefore, for the purpose of this examination, we focus on hosting/deploying trained (on ImageNet) image classification models like InceptionNet, MobileNet etc on triton inference server. Once deployed we can make inference requests and can get back the predictions. 
 
 
@@ -59,7 +59,7 @@ The expected output should be (by default triton provide services on port 8000) 
 
 
 # Part2: Setting up Triton Inference client
-In this part we will download the libraries required to interact with triton server i.e sending requests (input data) and recieving back the predictions.
+In this part we will download the libraries required to interact with triton server i.e sending inference requests (input data) to the deployed models and recieving back the predictions.
 It is recommended to install the below packages in a separate [conda](https://docs.conda.io/projects/conda/en/latest/index.html) environment.
 ## Libraries required:
   1. pip install nvidia-pyindex
