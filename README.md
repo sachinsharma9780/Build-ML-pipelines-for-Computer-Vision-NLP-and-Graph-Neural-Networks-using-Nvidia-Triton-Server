@@ -4,7 +4,7 @@ which simplifies the deployment of AI models at scale in production. The one thi
 
 # Agenda
 <ul> 
-<li> Introduction to Nvidia's Triton Inference Server (Need, features, applications, etc.) </li> 
+<li> Introduction to <a href="https://www.arangodb.com/"> ArangoDB </a> and Nvidia's Triton Inference Server (Need, features, applications, etc.) </li> 
 <li> Setting up Triton Inference server on local machine </li> 
 <li> Deploy your first trained model (Tensorflow) with an application to image classification on triton inference server </li> 
 <li> Deploy almost any Hugging Face PyTorch models with an application to zero-short text classification on triton inference server (Here we will convert given PyTorch models to triton acceptable models) </li> 
