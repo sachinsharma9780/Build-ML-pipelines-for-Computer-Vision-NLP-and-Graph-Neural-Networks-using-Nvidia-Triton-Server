@@ -45,7 +45,8 @@ Continue to Part 2 below..
 2. or use the command: 
 ``` docker pull nvcr.io/nvidia/tritonserver:21.05-py3 ```
 4. Image size: 10.6 GB (10-15 mins to install) 
-5. To view the downloaded docker image: docker images
+5. To view the downloaded docker image: 
+``` docker images ```
 
 ## Create a model repository to add your models:
 1. Clone the [Triton Inference Server GitHub repository](https://github.com/triton-inference-server/server.git
@@ -65,7 +66,7 @@ e.g. docker run  --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/Users/sachin/Deskto
 
 ## Verify Triton is running correctly
 
-curl -v http://localhost:8000/v2/health/ready
+``` curl -v http://localhost:8000/v2/health/ready ```
 
 The expected output should be (by default triton provide services on port 8000) : <br/>
 < HTTP/1.1 200 OK. <br/>
@@ -88,7 +89,7 @@ It is recommended to install the below packages in a separate [conda](https://do
 ## Image classification Example:
 Once the libraries are installed we can start communicating with triton server using inference scripts:
 
-e.g. python image_client.py -c 3  -m inception_graphdef -s INCEPTION vulture.jpeg
+e.g. ``` python image_client.py -c 3  -m inception_graphdef -s INCEPTION path/to/example_image ```
 
 ## References:
 1. https://medium.com/nvidia-ai/how-to-deploy-almost-any-hugging-face-model-on-nvidia-triton-inference-server-with-an-8ee7ec0e6fc4
