@@ -42,9 +42,10 @@ Continue to Part 2 below..
 
 ## Pulling triton server docker image from Nvidia NGC:
 1. [Download](https://ngc.nvidia.com/catalog/containers/nvidia:tritonserver/) docker image
-2. or use the command: docker pull nvcr.io/nvidia/tritonserver:21.05-py3
-3. Image size: 10.6 GB (10-15 mins to install) 
-4. To view the downloaded docker image: docker images
+2. or use the command: 
+''' docker pull nvcr.io/nvidia/tritonserver:21.05-py3 '''
+4. Image size: 10.6 GB (10-15 mins to install) 
+5. To view the downloaded docker image: docker images
 
 ## Create a model repository to add your models:
 1. Clone the [Triton Inference Server GitHub repository](https://github.com/triton-inference-server/server.git
