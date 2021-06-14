@@ -11,7 +11,7 @@ which simplifies the deployment of AI models at scale in production. The one thi
 <li> Once models are deployed, we can write a python-client side script to intertact with triton server (i.e. sending requests and reciving back the predictions </li> 
 <li>  Exploring the python image_client.py script in order to make image classification request </li> 
 <li> Writing down our own client-side script to interact with NLP Models </li> 
-<li> [Metrics](https://github.com/triton-inference-server/server/blob/main/docs/metrics.md) </li> 
+<li> Metrics(https://github.com/triton-inference-server/server/blob/main/docs/metrics.md) </li> 
 
 </ul>
 
