@@ -90,5 +90,6 @@ Once the libraries are installed we can start communicating with triton server u
 e.g. python image_client.py -c 3  -m inception_graphdef -s INCEPTION vulture.jpeg
 
 ## References:
-1. https://developer.nvidia.com/nvidia-triton-inference-server?ncid=partn-88872#cid=dl13_partn_en-us
-2. https://github.com/triton-inference-server/server/blob/main/docs/quickstart.md
+1. https://medium.com/nvidia-ai/how-to-deploy-almost-any-hugging-face-model-on-nvidia-triton-inference-server-with-an-8ee7ec0e6fc4
+2. https://developer.nvidia.com/nvidia-triton-inference-server?ncid=partn-88872#cid=dl13_partn_en-us
+3. https://github.com/triton-inference-server/server/blob/main/docs/quickstart.md
