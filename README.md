@@ -54,11 +54,11 @@ Continue to Part 2 below..
 2. After cloning, you can find the trained models under: server → docs →examples →model_repository
 3. Or you can clone this repo and in the model_repository folder, I have already stored some default trained models with their corresponding configuration file which comes along while cloning the above repository.
 4. Instantiate triton server using the cmd: </br>
-docker run --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/full/path/to/example/model/repository:/models docker image tritonserver —model-repository=/models
+``` docker run --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/full/path/to/example/model/repository:/models docker image tritonserver —model-repository=/models ```
 
 Note: Where docker image is nvcr.io/nvidia/tritonserver:<xx.yy>-py3 if you pulled the Triton container from NGC. -v flag points to the path of your model repository where all your models are stored as showed above.
 
-e.g. docker run  --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/Users/sachin/Desktop/arangodb/scripts/triton/model_repository:/models nvcr.io/nvidia/tritonserver:21.05-py3 tritonserver --model-repository=/models 
+e.g. ``` docker run  --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/Users/sachin/Desktop/arangodb/scripts/triton/model_repository:/models nvcr.io/nvidia/tritonserver:21.05-py3 tritonserver --model-repository=/models ```
 
 
 ![Screenshot 2021-06-07 at 11 24 57](https://user-images.githubusercontent.com/40523048/120992588-0ac11000-c783-11eb-8fdb-43404f52f97b.png)
