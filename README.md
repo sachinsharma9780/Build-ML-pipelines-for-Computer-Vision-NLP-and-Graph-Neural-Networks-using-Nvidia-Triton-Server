@@ -10,7 +10,7 @@ which simplifies the deployment of AI models at scale in production. The one thi
 <li> Deploy almost any Hugging Face PyTorch models with an application to zero-short text classification on triton inference server (Here we will convert given PyTorch models to triton acceptable models) </li> 
 <li> Once models are deployed, we can write a python-client side script to intertact with triton server (i.e. sending requests and reciving back the predictions </li> 
 <li>  Exploring the python image_client.py script in order to make image classification request </li> 
-<li> Writing down our own client-side script to interact with NLP Models </li> 
+<li> Writing down your own client-side script to interact with Hugging Face NLP Models </li> 
 <li>  <a href="https://github.com/triton-inference-server/server/blob/main/docs/metrics.md"> Triton Metrics</a> </li> 
 <li> Storing inference results in ArangoDB using <a href="https://github.com/joowani/python-arango"> python-arango</a> 
 </ul>
