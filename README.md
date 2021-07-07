@@ -85,8 +85,8 @@ It is recommended to install the below packages in a separate [conda](https://do
 ## Libraries required:
   1. pip install nvidia-pyindex
   2. pip install tritonclient[all]
-  3. pip3 install torch
-  4. pip3 install transformers
+  3. pip install torch
+  4. pip install transformers
   5. python -m pip install grpcio
   6. python -m pip install grpcio-tools
   7. pip install geventhttpclient
