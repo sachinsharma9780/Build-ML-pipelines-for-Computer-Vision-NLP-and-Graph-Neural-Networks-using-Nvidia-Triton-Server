@@ -85,11 +85,13 @@ It is recommended to install the below packages in a separate [conda](https://do
 ## Libraries required:
   1. pip install nvidia-pyindex
   2. pip install tritonclient[all]
-  3. python -m pip install grpcio
-  4. python -m pip install grpcio-tools
-  5. pip install geventhttpclient
-  6. pip install attrdict
-  7. pip install Pillow
+  3. pip3 install torch
+  4. pip3 install transformers
+  5. python -m pip install grpcio
+  6. python -m pip install grpcio-tools
+  7. pip install geventhttpclient
+  8. pip install attrdict
+  9. pip install Pillow
 
 ## Image classification Example:
 Once the libraries are installed we can start communicating with triton server using inference scripts:
