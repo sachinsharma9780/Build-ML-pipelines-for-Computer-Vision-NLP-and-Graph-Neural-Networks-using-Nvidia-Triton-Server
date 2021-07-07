@@ -23,7 +23,7 @@ which simplifies the deployment of AI models at scale in production. It natively
 
 
 ![1_126iG2mnfl4i6iH9FKu3sg](https://user-images.githubusercontent.com/40523048/120965914-c4a98380-c765-11eb-86f0-eb2ce2574e97.png)
-Image depicting the capability of [Nvidia's Triton Inference server](https://developer.nvidia.com/nvidia-triton-inference-server?ncid=partn-88872#cid=dl13_partn_en-us) to host Multiple heterogeneous deep learning frameworks.
+Image depicting the capability of [Nvidia's Triton Inference server](https://developer.nvidia.com/nvidia-triton-inference-server?ncid=partn-88872#cid=dl13_partn_en-us) to host Multiple heterogeneous deep learning frameworks on a GPU or a CPU (depending upon the backened).
 
 For, setting up the Triton inference server we generally need to pass two hurdles: 1) Set up our own inference server, and 2) After that, we have to write a python client-side script which can communicate with the inference server to send requests (in our case text) and get back predictions or image/text feature embeddings.
 
