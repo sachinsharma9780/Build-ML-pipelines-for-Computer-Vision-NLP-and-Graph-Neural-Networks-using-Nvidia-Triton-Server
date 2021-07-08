@@ -1,0 +1,9 @@
+  nvidia-pyindex
+  tritonclient[all]
+  torch
+  transformers
+  grpcio
+  grpcio-tools
+  geventhttpclient
+  attrdict
+  Pillow
