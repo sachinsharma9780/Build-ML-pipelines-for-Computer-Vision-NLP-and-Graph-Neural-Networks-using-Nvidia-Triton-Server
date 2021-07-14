@@ -32,10 +32,10 @@ Let's start by setting up a triton server locally on the computer by following t
 ### Quickstart with Docker
 ```
 1. Install Docker
-2. docker pull nvcr.io/nvidia/tritonserver:21.05-py3
+2. docker pull nvcr.io/nvidia/tritonserver:21.06.1-py3
 3. git clone https://github.com/sachinsharma9780/AI-Enterprise-Workshop-Building-ML-Pipelines.git
 4. cd ./AI-Enterprise-Workshop-Building-ML-Pipelines
-5. docker run --rm -p8000:8000 -p8001:8001 -p8002:8002 -v ${PWD}/model_repository:/models nvcr.io/nvidia/tritonserver:21.05-py3 tritonserver --model-repository=/models
+5. docker run --rm -p8000:8000 -p8001:8001 -p8002:8002 -v ${PWD}/model_repository:/models nvcr.io/nvidia/tritonserver:21.06.1-py3 tritonserver --model-repository=/models
 6. curl -v http://localhost:8000/v2/health/ready
 
 Continue to Part 2 below..
@@ -47,7 +47,7 @@ Continue to Part 2 below..
 ## Pulling triton server docker image from Nvidia NGC:
 1. [Download](https://ngc.nvidia.com/catalog/containers/nvidia:tritonserver/) docker image
 2. or use the command: 
-``` docker pull nvcr.io/nvidia/tritonserver:21.05-py3 ```
+``` docker pull nvcr.io/nvidia/tritonserver:21.06.1-py3 ```
 4. Image size: 10.6 GB (10-15 mins to install) 
 5. To view the downloaded docker image: 
 ``` docker images ```
@@ -62,7 +62,7 @@ Continue to Part 2 below..
 
 Note: Where docker image is nvcr.io/nvidia/tritonserver:<xx.yy>-py3 if you pulled the Triton container from NGC. -v flag points to the path of your model repository where all your models are stored, as shown above.
 
-e.g. ``` docker run  --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/Users/sachin/Desktop/arangodb/scripts/triton/model_repository:/models nvcr.io/nvidia/tritonserver:21.05-py3 tritonserver --model-repository=/models ```
+e.g. ``` docker run  --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/Users/sachin/Desktop/arangodb/scripts/triton/model_repository:/models nvcr.io/nvidia/tritonserver:21.06.1-py3 tritonserver --model-repository=/models ```
 
 
 ![Screenshot 2021-06-07 at 11 24 57](https://user-images.githubusercontent.com/40523048/120992588-0ac11000-c783-11eb-8fdb-43404f52f97b.png)
