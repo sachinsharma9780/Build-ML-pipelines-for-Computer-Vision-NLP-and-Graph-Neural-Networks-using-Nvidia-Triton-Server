@@ -100,11 +100,20 @@ It is recommended to install the below packages in a separate [conda](https://do
 
 ## Order of Execution
 
-### Deploying Hugging Face transformer model on Triton Inference server with an application to Zero Shot Text Classiifcation
-1) Start with creating a Triton acceptabele model using a notebook trace_pytorch_models.ipynb
+### Application #1: Deploying Hugging Face transformer model on Triton Inference server with an application to Zero Shot Text Classiifcation
+1) Start with creating a Triton acceptabele model using a notebook (under folder create_triton_acceptable_models) trace_pytorch_models.ipynb
 2) Add this created model into a model repository
-3) Start the Trito server with this newly added model
+3) Start the Triton server with this newly added model
 4) Run the application using the notebook triton_client_zero_shot_text_classification_application.ipynb
+
+### Application #2: Movie recommendation with Triton inference server and ArangoDB:
+1) Start with creating a Triton acceptabele model using a notebook trace_sentence_repn_bert_model.ipynb
+2) Add this created model into a model repository
+3) Start the Triton server with this newly added model (you can add multiple models in this repository depending upon the memory)
+4) Run the application using the notebook movie_recommendation_triton_client.ipynb
+
+## Dump Folder
+This folder already contains movie embeddings for all the movie descriptions present inside the imdb dataset. We did this to save time in case you run the movie recommendation notebook on CPU then it takes some time to generate movie embeddings and then store them in ArangoDB. In order to restore the movie embeddings inside the ArangoDb we can use its [arangorestore](https://www.arangodb.com/docs/stable/programs-arangorestore.html) utiliy.
 
 ## Image classification Example:
 Once the libraries are installed, we can start communicating with triton server using inference scripts:
