@@ -62,7 +62,7 @@ Continue to Part 2 below..
 
 Note: Where docker image is nvcr.io/nvidia/tritonserver:<xx.yy>-py3 if you pulled the Triton container from NGC. -v flag points to the path of your model repository where all your models are stored, as shown above.
 
-e.g. ``` docker run  --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/Users/sachin/Desktop/arangodb/scripts/triton/model_repository:/models nvcr.io/nvidia/tritonserver:21.06.1-py3 tritonserver --model-repository=/models ```
+e.g. ``` docker run --gpus=1 --rm -p8000:8000 -p8001:8001 -p8002:8002 -v/Users/sachin/Desktop/arangodb/scripts/triton/model_repository:/models nvcr.io/nvidia/tritonserver:21.06.1-py3 tritonserver --model-repository=/models ```
 
 
 ![Screenshot 2021-06-07 at 11 24 57](https://user-images.githubusercontent.com/40523048/120992588-0ac11000-c783-11eb-8fdb-43404f52f97b.png)
