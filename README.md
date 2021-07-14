@@ -98,6 +98,14 @@ It is recommended to install the below packages in a separate [conda](https://do
   8. pip install attrdict
   9. pip install Pillow
 
+## Order of Execution
+
+### Deploying Hugging Face transformer model on Triton Inference server with an application to Zero Shot Text Classiifcation
+1) Start with creating a Triton acceptabele model using a notebook trace_pytorch_models.ipynb
+2) Add this created model into a model repository
+3) Start the Trito server with this newly added model
+4) Run the application using the notebook triton_client_zero_shot_text_classification_application.ipynb
+
 ## Image classification Example:
 Once the libraries are installed, we can start communicating with triton server using inference scripts:
 
