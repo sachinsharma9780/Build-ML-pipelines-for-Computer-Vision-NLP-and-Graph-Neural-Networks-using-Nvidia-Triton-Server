@@ -121,7 +121,10 @@ Once the libraries are installed, we can start communicating with triton server 
 e.g. ``` python image_client.py -c 3  -m inception_graphdef -s INCEPTION path/to/example_image ```
 
 ## Slide Deck
-https://docs.google.com/presentation/d/1W0BnEsJrN5tR1E7ahVZuE70NnksIwHmROxieh5rIa2w/edit#slide=id.ge266904e26_0_530
+[Presentation](https://docs.google.com/presentation/d/1W0BnEsJrN5tR1E7ahVZuE70NnksIwHmROxieh5rIa2w/edit#slide=id.ge266904e26_0_530)
+
+## WorkShop Link
+[YouTube](https://www.youtube.com/watch?v=vOIm7Hibgdo&t=1952s)
 
 ## References:
 1. https://medium.com/nvidia-ai/how-to-deploy-almost-any-hugging-face-model-on-nvidia-triton-inference-server-with-an-8ee7ec0e6fc4
