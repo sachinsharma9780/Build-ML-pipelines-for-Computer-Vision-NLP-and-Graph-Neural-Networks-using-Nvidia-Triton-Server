@@ -128,7 +128,7 @@ e.g. ``` python image_client.py -c 3  -m inception_graphdef -s INCEPTION path/to
 ## Slide Deck
 [Presentation](https://docs.google.com/presentation/d/1W0BnEsJrN5tR1E7ahVZuE70NnksIwHmROxieh5rIa2w/edit#slide=id.ge266904e26_0_530)
 
-## WorkShop Link
+## WorkShop-1 Link
 [YouTube](https://www.youtube.com/watch?v=vOIm7Hibgdo&t=1952s)
 
 ## References:
