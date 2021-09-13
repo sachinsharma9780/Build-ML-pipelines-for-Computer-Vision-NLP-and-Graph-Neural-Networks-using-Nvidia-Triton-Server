@@ -6,7 +6,7 @@ In this workshop we are going to use [Nvidia's Triton Inference server](https://
  The above image represents the [Triton Inference Server Architecture](https://developer.nvidia.com/blog/simplifying-ai-inference-in-production-with-triton/) with its various supported components.
 
 # Nvidia Triton Infernce Server Features
-![Triton Features](https://user-images.githubusercontent.com/40523048/133061181-583166c9-1c81-469c-9937-070b8c1c8328.png)
+
 
 
 # Workshop-1:Agenda
