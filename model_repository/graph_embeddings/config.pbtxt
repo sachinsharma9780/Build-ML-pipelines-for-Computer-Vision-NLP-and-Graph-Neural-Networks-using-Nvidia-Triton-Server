@@ -1,0 +1,56 @@
+name: "graph_embeddings"
+platform: "pytorch_libtorch"
+input [
+ {
+    name: "input__0"
+    data_type: TYPE_FP32
+    dims: [1000, 100]
+  } ,
+{
+    name: "input__1"
+    data_type: TYPE_INT64
+    dims: [2, -1]
+  },
+{
+    name: "input__2"
+    data_type: TYPE_INT64
+    dims: [2]
+  },
+{
+    name: "input__3"
+    data_type: TYPE_INT64
+    dims: [2, -1]
+  },
+{
+    name: "input__4"
+    data_type: TYPE_INT64
+    dims: [2]
+  },
+{
+    name: "input__5"
+    data_type: TYPE_INT64
+    dims: [2, -1]
+  },
+{
+    name: "input__6"
+    data_type: TYPE_INT64
+    dims: [2]
+  }
+]
+output [
+{
+    name: "output__0"
+    data_type: TYPE_FP32
+    dims: [500, 256]
+  },
+{
+    name: "output__1"
+    data_type: TYPE_FP32
+    dims: [500, 256]
+  },
+{
+    name: "output__2"
+    data_type: TYPE_FP32
+    dims: [500, 47]
+  }
+]
