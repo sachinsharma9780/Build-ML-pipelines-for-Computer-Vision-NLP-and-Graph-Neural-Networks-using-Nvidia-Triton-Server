@@ -5,8 +5,13 @@ In this workshop we are going to use [Nvidia's Triton Inference server](https://
 
  The above image represents the [Triton Inference Server Architecture](https://developer.nvidia.com/blog/simplifying-ai-inference-in-production-with-triton/) with its various supported components.
 
+# Nvidia Triton Infernce Server Features
+![Screenshot 2021-09-13 at 11 42 45](https://user-images.githubusercontent.com/40523048/133061949-f49d636c-b2a4-4dc2-b80e-e32896d2ae64.png)
 
-# Agenda
+
+
+
+# Workshop-1:Agenda
 <ul> 
 <li> Introduction to <a href="https://www.arangodb.com/"> ArangoDB </a> and Nvidia's Triton Inference Server (Need, features, applications, etc.) </li> 
 <li> Setting up Triton Inference server on local machine </li> 
@@ -123,7 +128,7 @@ e.g. ``` python image_client.py -c 3  -m inception_graphdef -s INCEPTION path/to
 ## Slide Deck
 [Presentation](https://docs.google.com/presentation/d/1W0BnEsJrN5tR1E7ahVZuE70NnksIwHmROxieh5rIa2w/edit#slide=id.ge266904e26_0_530)
 
-## WorkShop Link
+## WorkShop-1 Link
 [YouTube](https://www.youtube.com/watch?v=vOIm7Hibgdo&t=1952s)
 
 ## References:
