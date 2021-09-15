@@ -100,6 +100,14 @@ It is recommended to install the below packages in a separate [conda](https://do
 3) Start the Triton server with this newly added model (you can add multiple models in this repository depending upon the memory)
 4) Run the application using the notebook movie_recommendation_triton_client.ipynb
 
+### Application #3: Graph ML, Nvidia Triton, and ArangoDB: Amazon Product Recommendation (APR) Application
+1) Train GrapSage model on APR dataset using a notebook Comprehensive_GraphSage_Guide_with_PyTorchGeometric.ipynb
+2) Either you can chose your own generated checkpoints from 1) or I have already stored them under chechkpoint folder for both GPU and CPU trained GraphSage model.
+3) Create a trace on GraphSage model using these checkpoints using notebook trace_obgn-product_graphsage_model.ipynb
+4) Update your model_repository for this traced model like shown in model_repository folder (graph_embeddings)
+5) Start the Triton server with this newly added model (you can add multiple models in this repository depending upon the memory)
+6) Run the application using the graph_ml_triton_arangodb_product_recommendation_app.ipynb
+
 ## Dump Folder
 This folder already contains movie embeddings for all the movie descriptions present inside the imdb dataset. We did this to save time in case you run the movie recommendation notebook on CPU then it takes some time to generate movie embeddings and then store them in ArangoDB. In order to restore the movie embeddings inside the ArangoDb we can use its [arangorestore](https://www.arangodb.com/docs/stable/programs-arangorestore.html) utiliy.
 
