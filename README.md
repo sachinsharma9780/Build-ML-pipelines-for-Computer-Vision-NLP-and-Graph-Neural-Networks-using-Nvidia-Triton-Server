@@ -75,7 +75,7 @@ It is recommended to install the below packages in a separate [conda](https://do
 1. `cd` into `scripts` folder
 2. `pip install -r .\requirements.txt` OR install as show below
 
-## Install Libraries Individually:
+## Requried Libraries for Application #1 and #2:
   1. pip install nvidia-pyindex
   2. pip install tritonclient[all]
   3. pip install torch
@@ -85,6 +85,15 @@ It is recommended to install the below packages in a separate [conda](https://do
   7. pip install geventhttpclient
   8. pip install attrdict
   9. pip install Pillow
+
+## Requried Libraries for Application #3:
+- pip install nvidia-pyindex
+- pip install tritonclient[all]
+- python -m pip install grpcio
+- python -m pip install grpcio-tools
+- pip install geventhttpclient
+- https://pytorch-geometric.readthedocs.io/en/latest/notes/installation.html (depends on your machine)
+- pip install ogb
 
 ## Order of Execution
 
@@ -100,7 +109,7 @@ It is recommended to install the below packages in a separate [conda](https://do
 3) Start the Triton server with this newly added model (you can add multiple models in this repository depending upon the memory)
 4) Run the application using the notebook movie_recommendation_triton_client.ipynb
 
-### Application #3: Graph ML, Nvidia Triton, and ArangoDB: Amazon Product Recommendation (APR) Application
+### Application #3: Graph ML, Nvidia Triton, and ArangoDB: Amazon Product Recommendation (APR) Application   
 - Train GrapSage model on APR dataset using a notebook Comprehensive_GraphSage_Guide_with_PyTorchGeometric.ipynb.
 - Either you can chose your own generated checkpoints from 1) or I have already stored them under checkpoint folder for both GPU and CPU trained GraphSage model.
 - Create a trace on GraphSage model using these checkpoints using notebook trace_obgn-product_graphsage_model.ipynb.
