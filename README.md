@@ -9,23 +9,6 @@ In this workshop we are going to use [Nvidia's Triton Inference server](https://
 ![Screenshot 2021-09-13 at 11 42 45](https://user-images.githubusercontent.com/40523048/133061949-f49d636c-b2a4-4dc2-b80e-e32896d2ae64.png)
 
 
-
-
-# Workshop-1:Agenda
-<ul> 
-<li> Introduction to <a href="https://www.arangodb.com/"> ArangoDB </a> and Nvidia's Triton Inference Server (Need, features, applications, etc.) </li> 
-<li> Setting up Triton Inference server on local machine </li> 
-<li> Deploy your first trained model (Tensorflow) with an application to image classification on triton inference server </li> 
-<li> Deploy almost any Hugging Face PyTorch models with an application to zero-short text classification on triton inference server (Here we will convert given PyTorch models to triton acceptable models) </li> 
-<li> Once models are deployed, we can write a python-client side script to interact with triton server (i.e. sending requests and receiving back the predictions </li> 
-<li>  Exploring the python image_client.py script in order to make image classification request </li> 
-<li> Writing down your own client-side script to interact with Hugging Face NLP Models </li> 
-<li>  <a href="https://github.com/triton-inference-server/server/blob/main/docs/metrics.md"> Triton Metrics</a> </li> 
-<li> Storing inference results in ArangoDB using <a href="https://github.com/joowani/python-arango"> python-arango</a> 
-</ul>
-
-
-
 ![1_126iG2mnfl4i6iH9FKu3sg](https://user-images.githubusercontent.com/40523048/120965914-c4a98380-c765-11eb-86f0-eb2ce2574e97.png)
 Image depicting the capability of [Nvidia's Triton Inference server](https://developer.nvidia.com/nvidia-triton-inference-server?ncid=partn-88872#cid=dl13_partn_en-us) to host Multiple heterogeneous deep learning frameworks on a GPU or a CPU (depending upon the backened).
 
