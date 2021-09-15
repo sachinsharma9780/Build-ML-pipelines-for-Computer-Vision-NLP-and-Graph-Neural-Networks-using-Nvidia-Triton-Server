@@ -102,7 +102,8 @@ It is recommended to install the below packages in a separate [conda](https://do
 
 ### Application #3: Graph ML, Nvidia Triton, and ArangoDB: Amazon Product Recommendation (APR) Application
 1) Train GrapSage model on APR dataset using a notebook Comprehensive_GraphSage_Guide_with_PyTorchGeometric.ipynb
-2)Either you can chose your own generated checkpoints from 1) or I have already stored them under chechkpoint folder for both GPU and CPU trained GraphSage model.
+
+2)Either you can chose your own generated checkpoints from 1) or I have already stored them under checkpoint folder for both GPU and CPU trained GraphSage model.
 3) Load APR graph dataset into arangodb using the [dump](https://drive.google.com/drive/folders/1JF0gkAMmSlrsmmnB9uzeZdgmX8NgFwV4) and [arangorestore](https://www.arangodb.com/docs/stable/programs-arangorestore.html) utility. 
 For eg. ``` arangorestore --input-directory "dump" ```
 4) Create a trace on GraphSage model using these checkpoints using notebook trace_obgn-product_graphsage_model.ipynb
