@@ -136,5 +136,7 @@ e.g. ``` python image_client.py -c 3  -m inception_graphdef -s INCEPTION path/to
 
 ## References:
 1. https://medium.com/nvidia-ai/how-to-deploy-almost-any-hugging-face-model-on-nvidia-triton-inference-server-with-an-8ee7ec0e6fc4
-2. https://developer.nvidia.com/nvidia-triton-inference-server?ncid=partn-88872#cid=dl13_partn_en-us
-3. https://github.com/triton-inference-server/server/blob/main/docs/quickstart.md
+2. https://towardsdatascience.com/a-comprehensive-case-study-of-graphsage-algorithm-with-hands-on-experience-using-pytorchgeometric-6fc631ab1067
+3. https://sachinsharma9780.medium.com/a-voyage-through-graph-machine-learning-universe-motivation-applications-datasets-graph-ml-e573a898b346
+4. https://developer.nvidia.com/nvidia-triton-inference-server?ncid=partn-88872#cid=dl13_partn_en-us
+5. https://github.com/triton-inference-server/server/blob/main/docs/quickstart.md
