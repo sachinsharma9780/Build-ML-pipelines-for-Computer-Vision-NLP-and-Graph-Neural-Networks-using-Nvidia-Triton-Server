@@ -87,6 +87,7 @@ It is recommended to install the below packages in a separate [conda](https://do
   9. pip install Pillow
 
 ## Requried Libraries for Application #3:
+- [ArangoDB] (https://www.arangodb.com/docs/stable/getting-started-installation.html) Installation
 - pip install nvidia-pyindex
 - pip install tritonclient[all]
 - python -m pip install grpcio
