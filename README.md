@@ -131,8 +131,11 @@ e.g. ``` python image_client.py -c 3  -m inception_graphdef -s INCEPTION path/to
 ## Slide Deck
 [Presentation](https://docs.google.com/presentation/d/1W0BnEsJrN5tR1E7ahVZuE70NnksIwHmROxieh5rIa2w/edit#slide=id.ge266904e26_0_530)
 
-## WorkShop-1 Link
+## WorkShop-1: NVIDIA Triton meets ArangoDB 
 [YouTube](https://www.youtube.com/watch?v=vOIm7Hibgdo&t=1952s)
+
+## WorkShop-2: Machine Learning on Graphs with PyTorch Geometric, NVIDIA Triton, and ArangoDB
+[YouTube](https://www.youtube.com/watch?v=HVGRpuLD5zM&t=262s)
 
 ## References:
 1. https://medium.com/nvidia-ai/how-to-deploy-almost-any-hugging-face-model-on-nvidia-triton-inference-server-with-an-8ee7ec0e6fc4
